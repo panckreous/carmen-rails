@@ -1,12 +1,8 @@
-# NOT ACTIVELY MAINTAINED
-
-I haven't time in over a year to properly support this project.
-
 # carmen-rails
 
-carmen-rails is a Rails 3 plugin that supplies two new form helper methods:
+carmen-rails is a Rails plugin that supplies two new form helper methods:
 `country_select` and `subregion_select`. It uses
-[carmen](http://github.com/jim/carmen) as its source of geographic data.
+[carmen](https://github.com/carmen-ruby/carmen) as its source of geographic data.
 
 ## Requirements
 
@@ -17,7 +13,7 @@ carmen-rails requires Ruby 1.9.2 or greater.
 Just add carmen-rails to your Gemfile:
 
 ```ruby
-gem 'carmen-rails', '~> 1.0.0'
+gem 'carmen-rails'
 ```
 ## Usage
 
@@ -62,14 +58,6 @@ And then in your form something like this:
 ``` erb
 <%= f.select :country, region_options_for_select(only_us_and_canada) %>
 ```
-
-More docs coming soon. In the meantime, all of the public methods in
-carmen-rails [have been thoroughly TomDoc'ed](https://github.com/jim/carmen-rails/blob/master/lib/carmen/rails/action_view/form_helper.rb).
-
-### Demo app
-
-There is a [live demo app](http://carmen-rails-demo.herokuapp.com) that shows
-carmen-rails in action, and includes a [step-by-step setup guide](https://github.com/jim/carmen-demo-app#readme).
 
 ## Configuration
 
